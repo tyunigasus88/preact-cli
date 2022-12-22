@@ -34,7 +34,7 @@ async function devBuild(config, env) {
 			let localIpAddr = `${protocol}://${ip.address()}:${bold(config.port)}`;
 
 			if (!stats.hasErrors()) {
-				process.stdout.write(green('Compiled successfully!\n\n'));
+				process.stdout.write(green('\nCompiled successfully!\n\n'));
 				process.stdout.write('You can view the application in browser.\n\n');
 				process.stdout.write(`${bold('Local:')}            ${serverAddr}\n`);
 				process.stdout.write(`${bold('On Your Network:')}  ${localIpAddr}\n`);

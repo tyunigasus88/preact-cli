@@ -94,11 +94,9 @@ module.exports = async function renderHTMLPlugin(config, env) {
 						preload: config.preload,
 						config,
 						env,
-						preRenderData: values,
-						CLI_DATA: { preRenderData: { url, ...routeData } },
-						ssr: config.prerender
-							? await prerender(config, values)
-							: '',
+						prerenderData: values,
+						CLI_DATA: { prerenderData: { url, ...routeData } },
+						ssr: config.prerender ? await prerender(config, values) : '',
 						entrypoints,
 					},
 					htmlWebpackPlugin: {
