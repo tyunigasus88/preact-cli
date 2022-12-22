@@ -11,13 +11,14 @@ describe('preact info', () => {
 		const _cwd = process.cwd();
 
 		shell.cd(dir);
-		const { code, stdout } = shell.exec(
+		const { code, stdout, stderr } = shell.exec(
 			`node ${join(__dirname, '../src/index.js')} info`
 		);
+		expect(code).toBe(0);
+		expect(stderr).toBe('');
 		['OS', 'Node', 'preact', 'preact-render-to-string'].forEach(label => {
 			expect(stdout).toMatch(`${label}:`);
 		});
-		expect(code).toBe(0);
 
 		shell.cd(_cwd);
 	});
