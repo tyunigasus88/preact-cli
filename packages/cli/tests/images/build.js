@@ -13,10 +13,10 @@ exports.default = {
 	'ssr-build/ssr-bundle.js.map': 54939,
 	'ssr-build/asset-manifest.json': 76,
 
-	'bundle.65625.js': 21088,
-	'bundle.65625.js.map': 86032,
-	'bundle.65625.legacy.js': 22434,
-	'bundle.65625.legacy.js.map': 108309,
+	'bundle.cff67.js': 21088,
+	'bundle.cff67.js.map': 86032,
+	'bundle.cff67.legacy.js': 22434,
+	'bundle.cff67.legacy.js.map': 108309,
 	'bundle.354c3.css': 945,
 	'bundle.354c3.css.map': 1758,
 
@@ -158,7 +158,7 @@ exports.template = `
 		<h2>This is an app with custom template</h2>
 		<script defer="defer" src="/bundle.\\w{5}.js"></script>
 		<h2>This is an app with custom template</h2>
-		<script type="__PREACT_CLI_DATA__">%7B%22preRenderData%22:%7B%22url%22:%22/%22%7D%7D</script>
+		<script type="__PREACT_CLI_DATA__">%7B%22prerenderData%22:%7B%22url%22:%22/%22%7D%7D</script>
 		<script crossorigin="anonymous" src="/bundle.\\w{5}.js" type="module"></script>
 		<script nomodule="" src="/dom-polyfills.\\w{5}.legacy.js"></script>
 		<script nomodule="" src="/es-polyfills.legacy.js"></script>
@@ -182,7 +182,7 @@ exports.publicPath = `
 	</head>
 	<body>
 		<h1>Public path test</h1>
-		<script type="__PREACT_CLI_DATA__">%7B%22preRenderData%22:%7B%22url%22:%22/%22%7D%7D</script>
+		<script type="__PREACT_CLI_DATA__">%7B%22prerenderData%22:%7B%22url%22:%22/%22%7D%7D</script>
 		<script crossorigin="anonymous" src="/example-path/bundle.\\w{5}.js" type="module"></script>
 		<script nomodule="" src="/example-path/dom-polyfills.\\w{5}.legacy.js"></script>
 		<script nomodule="" src="/example-path/es-polyfills.legacy.js"></script>
